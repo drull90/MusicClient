@@ -1,0 +1,26 @@
+
+.noPaddingBot {
+	padding-bottom: 0px;
+}
+
+.centerImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 50%;
+	max-width: 300px;
+}
+
+.centerVbox {
+	max-height: 600px;
+	vertical-align: middle;
+}
+
+.sapMSliderHandle {
+	height: 0rem;
+	width: 0rem;
+	top: 0rem;
+	margin-left: 0rem;
+	border: 0px;
+}

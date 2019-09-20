@@ -1,0 +1,21 @@
+<mvc:View
+	height			="100vh"
+    controllerName	="Music.controller.Music"
+	xmlns:mvc		="sap.ui.core.mvc"
+	xmlns		    ="sap.m">
+
+	<Page showHeader= "false">
+	
+		<content>
+		
+			<List
+				id					="list"
+				growing				="true"
+				growingScrollToLoad	="true">
+			</List>
+
+		</content>
+	
+	</Page>
+
+</mvc:View>

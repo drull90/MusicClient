@@ -1,0 +1,58 @@
+<mvc:View
+    controllerName	="Music.controller.DetailCancion"
+	xmlns:mvc		="sap.ui.core.mvc"
+	xmlns		    ="sap.m"
+	xmlns:layout	="sap.ui.commons.layout">
+
+        <Page
+			id				= "page"
+            title           = "" 
+            showNavButton   = "true"
+            navButtonPress  = "onBack">
+
+            <content>
+
+				<VBox class="centerVbox">
+
+					<Image src="borrar/image.jpg" densityAware="false" width="80%" class="centerImg"/>
+
+					<HBox class="sapUiMediumMarginTop">
+						<HBox width="33%" justifyContent="End">
+							<Button type="Transparent" icon="sap-icon://navigation-left-arrow"/>
+						</HBox>
+						<HBox width="33%" justifyContent="Center">
+							<Button id="playBtn" type="Transparent" icon="sap-icon://media-play" press="onPlay"/>
+						</HBox>
+						<HBox width="33%" justifyContent="Start">
+							<Button type="Transparent" icon="sap-icon://navigation-right-arrow"/>
+						</HBox>
+					</HBox>
+
+					<Label text="{Titulo}" design="Bold" width="100%" textAlign="Center"/>
+					<Label text="{Autor}" design="Bold" width="100%" textAlign="Center"/>
+
+					<VBox class="sapUiLargeMarginBeginEnd" height="40px">
+						<Slider id="slider" 
+								min="0" 
+								max="{Duracion}" 
+								value="0" 
+								step="1" 
+								progress="true" 
+								class="noPaddingBot"
+								enabled="false"/>
+					</VBox>
+					<HBox>
+						<HBox width="50%" class="sapUiLargeMarginBeginEnd">
+							<Label id="initTime" text="0:00" width="45px" textAlign="Center"/>
+						</HBox>
+						<HBox width="50%" justifyContent="End" class="sapUiLargeMarginBeginEnd">
+							<Label id="finiTime" text="{ path: 'Duracion', formatter: '.toMinutes'}" width="45px" textAlign="Center"/>
+						</HBox>
+					</HBox>
+				</VBox>
+
+            </content>
+
+        </Page>
+
+</mvc:View>
